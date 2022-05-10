@@ -19,6 +19,9 @@ public class Monster : MonoBehaviour
         if (bird != null)
             return true;
 
+        if (collision.contacts[0].normal.y < -0.5f)
+            return true;
+
         return false;
     }
 
