@@ -10,6 +10,38 @@ public class Monster : MonoBehaviour
     [SerializeField] ParticleSystem _particleSystem;
     
     bool _hasDied;
+    Rigidbody2D _rb;
+    static float _amt0 = -1.15f;
+    static float _amt3 = -1.50f;
+    static bool _oneShot3 = true;
+
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (gameObject.tag == "Monster0")
+        {
+            //if (gameObject.transform.position.x < -6.5f)
+            //    amt0 = -amt0;
+            _rb.velocity = new Vector2(_amt0, 0f);
+        }
+        if (gameObject.tag == "Monster3")
+        {
+            //print(gameObject.transform.position.x);
+            if (gameObject.transform.position.x < -10f || gameObject.transform.position.x > -2.5f)
+                if (_oneShot3)
+                {
+                    _amt0 = -_amt0;
+                    _amt3 = -_amt3;
+                    _oneShot3 = false;
+                }
+            _rb.velocity = new Vector2(_amt3, 0f);
+            _oneShot3 = true;
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
