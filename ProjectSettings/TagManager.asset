@@ -8,6 +8,7 @@ TagManager:
   - Monster0
   - RedBird
   - GreenBird
+  - Title
   layers:
   - Default
   - TransparentFX
