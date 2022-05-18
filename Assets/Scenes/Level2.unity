@@ -1626,6 +1626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 343584847456265397, guid: effb3704cdd19e04aaa0d21c78a451c3, type: 3}
+      propertyPath: m_TagString
+      value: RedBird
+      objectReference: {fileID: 0}
     - target: {fileID: 343584847456265399, guid: effb3704cdd19e04aaa0d21c78a451c3, type: 3}
       propertyPath: m_RootOrder
       value: 0

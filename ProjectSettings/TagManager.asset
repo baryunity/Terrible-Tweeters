@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Monster3
   - Monster0
+  - RedBird
+  - GreenBird
   layers:
   - Default
   - TransparentFX

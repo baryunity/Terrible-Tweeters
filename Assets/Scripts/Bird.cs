@@ -27,7 +27,10 @@ public class Bird : MonoBehaviour
 
     void OnMouseDown()
     {
-        _spriteRenderer.color = Color.green;
+        if (gameObject.tag == "RedBird")
+            _spriteRenderer.color = Color.red;
+        if (gameObject.tag == "GreenBird")
+            _spriteRenderer.color = Color.green;
     }
 
     void OnMouseUp()

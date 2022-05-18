@@ -1816,6 +1816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 5671204647559166962, guid: 2dd93222f8c5de34589e4d86798140a4, type: 3}
+      propertyPath: m_TagString
+      value: GreenBird
+      objectReference: {fileID: 0}
     - target: {fileID: 5671204647559166964, guid: 2dd93222f8c5de34589e4d86798140a4, type: 3}
       propertyPath: m_Constraints
       value: 4
