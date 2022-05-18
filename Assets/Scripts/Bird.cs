@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
-    [SerializeField] float _launchForce = 500f;
+    [SerializeField] float _launchForce = 1100f;
     [SerializeField] float _maxDragDistance = 5f;
 
     Vector2 _startPosition;
@@ -27,7 +27,7 @@ public class Bird : MonoBehaviour
 
     void OnMouseDown()
     {
-        _spriteRenderer.color = Color.red;
+        _spriteRenderer.color = Color.green;
     }
 
     void OnMouseUp()
