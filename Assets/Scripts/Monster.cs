@@ -13,6 +13,7 @@ public class Monster : MonoBehaviour
     Rigidbody2D _rb;
     static float _amt0 = -1.15f;
     static float _amt3 = -1.50f;
+    static bool _oneShot0 = true;
     static bool _oneShot3 = true;
 
     private void Awake()
@@ -24,9 +25,16 @@ public class Monster : MonoBehaviour
     {
         if (gameObject.tag == "Monster0")
         {
-            //if (gameObject.transform.position.x < -6.5f)
-            //    amt0 = -amt0;
+            //print(gameObject.transform.position.x);
+            if (gameObject.transform.position.x < -9f || gameObject.transform.position.x > -1.72f)
+                if (_oneShot0)
+                {
+                    _amt0 = -_amt0;
+                    _amt3 = -_amt3;
+                    _oneShot0 = false;
+                }
             _rb.velocity = new Vector2(_amt0, 0f);
+            _oneShot0 = true;
         }
         if (gameObject.tag == "Monster3")
         {
