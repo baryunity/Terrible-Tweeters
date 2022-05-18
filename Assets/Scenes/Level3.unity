@@ -877,6 +877,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2283945371056350247, guid: a36bec062e2ab864c993ee3c2a05c6b6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2283945371056350249, guid: a36bec062e2ab864c993ee3c2a05c6b6, type: 3}
       propertyPath: m_Name
       value: PurpleMonster (0)
